@@ -1,6 +1,8 @@
 
 (function(window) {
 
+    //commited cell
+
 	function Cell() {
 		this.initialize();
 	}
