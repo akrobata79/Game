@@ -34,15 +34,20 @@ VirusGameEngine.prototype = {
 			mainContainer.addChild(cursorCell);
 
             enemy = new Enemy();
-            enemy.gridRef=grid
+            enemy.gridRef=grid;
+
             mainContainer.addChild(enemy);
             
             // tests:
             enemy.placeHere(5,4);
-            enemy.go("RIGHT")
+
             for ( var i = 5; i < 10; i++) {
                 this.infectCell(i,5);
             };
+
+            enemy.go("RIGHT");
+
+
 
         },
 
@@ -60,14 +65,15 @@ VirusGameEngine.prototype = {
             if(!e) { var e = window.event; }
 
 			switch(e.keyCode) {
-                
+
             case S.KEYCODE_SPACE:    thisSelf.infectCell(cursorCell.gridX,cursorCell.gridY);              break;
 
 			case S.KEYCODE_A:   cursorCell.go(e.keyCode);           break;
 			case S.KEYCODE_D:   cursorCell.go(e.keyCode);           break;
 			case S.KEYCODE_W:   cursorCell.go(e.keyCode);           break;
 			case S.KEYCODE_S:   cursorCell.go(e.keyCode);           break;
-			}
+
+            }
 
 		},
 

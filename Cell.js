@@ -11,8 +11,6 @@
 	Cell.prototype = new RFUIBlock();
 	
 	Cell.prototype.infectiousDirections = ["UP","DOWN","RIGHT","LEFT"];
-
-	Cell.prototype.infectionSpeed;
 	
 	Cell.prototype.infected = false;
 

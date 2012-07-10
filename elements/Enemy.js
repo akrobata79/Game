@@ -50,9 +50,15 @@
 
     Enemy.prototype.go = function(dir) {
 
+        console.log("now",this.gridX,this.gridY);
+
+        var tCell = this.gridRef.getItemAtXY(this.gridX,this.gridY+1).infected;
+
+        if(tCell==true) console.log("there'sone");
+
             var animParams = {onComplete:this.calculateNextMove};
 
-            switch(dir) {
+            switch(this.decideWhichWayGo(dir)) {
 
                 case "LEFT":   animParams.x= (-S.C_WIDTH).toString();  this.gridX--;          break;
                 case "RIGHT":   animParams.x= S.C_WIDTH.toString();  this.gridX++;            break;
@@ -63,13 +69,42 @@
             TweenMax.to(this, S.ENEMY_SPEED,animParams);
     };
 
+    Enemy.prototype.decideWhichWayGo  = function(dir) {
+        var result = dir;
+
+        //if going right
+        if(dir=="RIGHT") {
+
+
+            var cond1 = this.gridRef.getItemAtXY(this.gridX+1,this.gridY).infected;
+
+
+            var cond2 = this.gridRef.getItemAtXY(this.gridX+1,this.gridY).infected;
+
+
+        }
+
+
+        return result
+    }
+
+
+
     Enemy.prototype.animationOver = function() {
         this.calculateNextMove();
     };
 
     Enemy.prototype.calculateNextMove = function () {
 
-        this.target.go("RIGHT");
+        var ref = this.target;
+        ref.go("RIGHT");
+
+      //  console.log(ref.gridX,ref.gridY);
+
+        //infected
+
+
+
 
     }
 
