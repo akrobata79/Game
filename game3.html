@@ -4,48 +4,48 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>EaselJS Example: Building a game</title>
 
-<link href="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/styles/styles.css" rel="stylesheet" type="text/css" />
+<link href="http://localhost/HTML5/GITPROJECTS/Game/styles/styles.css" rel="stylesheet" type="text/css" />
 
-<script src="http://localhost/html5/WorkspaceJavascript/Global/GoodParts.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/GoodParts.js"></script>
 
 
 <!-- Import EaselJS Framework -->
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/utils/UID.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/display/SpriteSheet.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/display/Shadow.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/geom/Matrix2D.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/geom/Point.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/events/MouseEvent.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/display/DisplayObject.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/display/Container.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/display/Stage.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/display/Graphics.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/display/Shape.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/display/Text.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/easeljs/utils/Ticker.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/utils/UID.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/display/SpriteSheet.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/display/Shadow.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/geom/Matrix2D.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/geom/Point.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/events/MouseEvent.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/display/DisplayObject.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/display/Container.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/display/Stage.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/display/Graphics.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/display/Shape.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/display/Text.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/easeljs/utils/Ticker.js"></script>
 
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/greensock-v12-js/src/uncompressed/TweenMax.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/greensock-v12-js/src/uncompressed/easing/EasePack.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/greensock-v12-js/src/uncompressed/TweenMax.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/greensock-v12-js/src/uncompressed/easing/EasePack.js"></script>
 
-<script src="http://localhost/html5/WorkspaceJavascript/Global/Rndm.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/Global/RFU.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/Rndm.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/GlobalLib/RFU.js"></script>
 <!-- End EaselJS Imports -->
 
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/SkinLib.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/SymbolLib.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/Game/libs/SkinLib.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/Game/libs/SymbolLib.js"></script>
 <!-- Game script below -->
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/SpaceRock.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/Ship.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/RFUIBlock.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/elements/RFGrid.js"></script>
 
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/RFGridContainer.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/Cegielka.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/Cell.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/VirusGameEngine.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/CursorCell.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/S.js"></script>
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/elements/RFabstractGrid.js"></script>
+
+<script src="http://localhost/HTML5/GITPROJECTS/Game/RFUIBlock.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/Game/elements/RFGrid.js"></script>
+
+<script src="http://localhost/HTML5/GITPROJECTS/Game/RFGridContainer.js"></script>
+
+<script src="http://localhost/HTML5/GITPROJECTS/Game/Cell.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/Game/VirusGameEngine.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/Game/CursorCell.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/Game/S.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/Game/elements/RFabstractGrid.js"></script>
 
 
 </head>
@@ -58,5 +58,5 @@
 	</div>
 </body>
 
-<script src="http://localhost/HTML5/WorkspaceJavascript/995WebstormTest/GridGame/Main3_mine.js"></script>
+<script src="http://localhost/HTML5/GITPROJECTS/Game/Main3_mine.js"></script>
 </html>
