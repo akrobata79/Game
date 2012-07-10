@@ -9,6 +9,7 @@ VirusGameEngine.prototype = {
 		mainContainer:null,
         thisSelf:null,
 		cursorCell:null,
+        enemy:null,
 
 		init: function() {
 
@@ -32,7 +33,18 @@ VirusGameEngine.prototype = {
 			cursorCell = new CursorCell();
 			mainContainer.addChild(cursorCell);
 
-		},
+            enemy = new Enemy();
+            enemy.gridRef=grid
+            mainContainer.addChild(enemy);
+            
+            // tests:
+            enemy.placeHere(5,4);
+            enemy.go("RIGHT")
+            for ( var i = 5; i < 10; i++) {
+                this.infectCell(i,5);
+            };
+
+        },
 
 		setDocument: function(t) {
 			documentRef=t;
@@ -48,15 +60,13 @@ VirusGameEngine.prototype = {
             if(!e) { var e = window.event; }
 
 			switch(e.keyCode) {
-                case S.KEYCODE_SPACE:    thisSelf.infectCell(cursorCell.gridX,cursorCell.gridY);              break;
+                
+            case S.KEYCODE_SPACE:    thisSelf.infectCell(cursorCell.gridX,cursorCell.gridY);              break;
 
-            //ch
-
-             //ch
-			case S.KEYCODE_A:   cursorCell.go(e.keyCode);             break;
+			case S.KEYCODE_A:   cursorCell.go(e.keyCode);           break;
 			case S.KEYCODE_D:   cursorCell.go(e.keyCode);           break;
 			case S.KEYCODE_W:   cursorCell.go(e.keyCode);           break;
-			case S.KEYCODE_S:   cursorCell.go(e.keyCode);             break;
+			case S.KEYCODE_S:   cursorCell.go(e.keyCode);           break;
 			}
 
 		},
@@ -75,7 +85,6 @@ VirusGameEngine.prototype = {
 		},
 
 		infectCell: function(x,y) {
-
             var yo = grid.getItemAtXY(x,y);
             yo.infect(true);
 
@@ -86,9 +95,6 @@ VirusGameEngine.prototype = {
         }
 
 };
-
-
-
 
 
 
