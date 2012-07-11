@@ -78,14 +78,8 @@
         };
     }
 
-//    for (var i = 0; i < 100; ++i) {
-//        myElements[i].onclick = getHandler(i);
-//    }
 
     Enemy.prototype.decideWhichWayGo  = function(dir) {
-
-
-        //console.log("this.prevDir",this.prevDir);
 
         var result = dir;
 
@@ -102,15 +96,16 @@
                 }
         }
 
-
-
-
         if(!found) {
 
             var pickRandom=rArr[Rndm.integer(rArr.length)];
-            result=pickRandom;
-            console.log("deciding to go:", result)
 
+
+            //decide here which one sticks
+
+            result=pickRandom;
+
+            console.log("deciding to go:", result)
 
         }
 

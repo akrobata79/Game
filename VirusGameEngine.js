@@ -45,6 +45,18 @@ VirusGameEngine.prototype = {
                 this.infectCell(i,5);
             };
 
+            //frames
+            for ( var i = 0; i < S.G_WIDTH; i++) {
+                this.infectCell(i,0);
+                this.infectCell(i, S.G_HEIGHT-1 );
+            };
+
+            for ( var i = 0; i < S.G_HEIGHT; i++) {
+                this.infectCell(0,i);
+                this.infectCell(S.G_WIDTH-1,i );
+            };
+
+
             this.infectCell(8,4);
             this.infectCell(8,3);
           //  this.infectCell(7,2);
