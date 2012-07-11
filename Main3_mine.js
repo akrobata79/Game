@@ -1,3 +1,6 @@
+
+
+http://underscorejs.org/#first
 //http://james.padolsey.com/javascript/closures-in-javascript/
 
 //http://jsfiddle.net/

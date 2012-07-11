@@ -94,26 +94,22 @@
         console.log("attempting to go:",result, "but can go: ",rArr)
 
 
-
+        var found = false;
         for (var i in rArr) {
-
-                //if found, keep on going same way
-
                 if (result==rArr[i]) {
-
                     console.log("deciding to go:", result)
-
-                    break;
-
-                } else {
-
-                   var pickRandom=rArr[Rndm.integer(rArr.length)];
-
-                    result=pickRandom;
-                    console.log("deciding to go:", result)
-                    break;
-
+                    var found = true;
                 }
+        }
+
+
+
+
+        if(!found) {
+
+            var pickRandom=rArr[Rndm.integer(rArr.length)];
+            result=pickRandom;
+            console.log("deciding to go:", result)
 
 
         }
