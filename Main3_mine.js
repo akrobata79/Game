@@ -1,3 +1,9 @@
+//http://jsfiddle.net/
+//http://www.shinydemos.com/
+//http://www.alexisriols.fr/
+//http://www.appinessworld.com/
+
+//swissknife thing
 
 var canvas, stage, grid, engine = new VirusGameEngine(), gameContainer = new Container();
 

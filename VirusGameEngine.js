@@ -45,6 +45,8 @@ VirusGameEngine.prototype = {
                 this.infectCell(i,5);
             };
 
+            //this.infectCell(
+
             enemy.go("RIGHT");
 
 
@@ -92,7 +94,7 @@ VirusGameEngine.prototype = {
 
 		infectCell: function(x,y) {
             var yo = grid.getItemAtXY(x,y);
-            yo.infect(true);
+            yo.infect(false);
 
 		},
 

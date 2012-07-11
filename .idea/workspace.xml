@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6ceb9281-da95-47c5-b0f3-2a4f6ada157d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cell.js" afterPath="$PROJECT_DIR$/Cell.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main3_mine.js" afterPath="$PROJECT_DIR$/Main3_mine.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VirusGameEngine.js" afterPath="$PROJECT_DIR$/VirusGameEngine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arch/Virus.js" afterPath="$PROJECT_DIR$/arch/Virus.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elements/Enemy.js" afterPath="$PROJECT_DIR$/elements/Enemy.js" />
     </list>
     <ignored path="Game.iws" />
@@ -25,13 +27,13 @@
     <favorites_list name="Game" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3064645">
+    <splitter split-orientation="horizontal" split-proportion="0.3265306">
       <split-first>
         <leaf>
-          <file leaf-file-name="VirusGameEngine.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="VirusGameEngine.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/VirusGameEngine.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="47" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.33333334">
+                <state line="96" column="21" selection-start="2144" selection-end="2150" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -40,7 +42,7 @@
           <file leaf-file-name="Main3_mine.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Main3_mine.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="28" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+                <state line="3" column="2" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -58,16 +60,16 @@
           <file leaf-file-name="game3.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/game3.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.33333334">
+                <state line="9" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="-0.625">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Cell.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Cell.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Cell.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="27" selection-start="224" selection-end="232" vertical-scroll-proportion="-8.076923">
+                <state line="21" column="4" selection-start="337" selection-end="337" vertical-scroll-proportion="0.47085202">
                   <folding />
                 </state>
               </provider>
@@ -107,7 +109,7 @@
           <file leaf-file-name="Enemy.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/elements/Enemy.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="80" column="0" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.6706408">
+                <state line="77" column="0" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.48387095">
                   <folding />
                 </state>
               </provider>
@@ -129,10 +131,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/CursorCell.js" />
-        <option value="$PROJECT_DIR$/Main3_mine.js" />
         <option value="$PROJECT_DIR$/Enemy.js" />
         <option value="$PROJECT_DIR$/game3.html" />
         <option value="$PROJECT_DIR$/S.js" />
+        <option value="$PROJECT_DIR$/Main3_mine.js" />
         <option value="$PROJECT_DIR$/Cell.js" />
         <option value="$PROJECT_DIR$/VirusGameEngine.js" />
         <option value="$PROJECT_DIR$/elements/Enemy.js" />
@@ -141,7 +143,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
+    <option name="width" value="1439" />
     <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -170,6 +172,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,16 +216,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,6 +242,24 @@
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value="SHOW_INHERITED,SHOW_FIELDS" />
   </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6ceb9281-da95-47c5-b0f3-2a4f6ada157d" name="Default" comment="" />
@@ -249,13 +269,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
+    <frame x="0" y="22" width="1439" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23373175" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.115737475" sideWeight="0.62417" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.115737475" sideWeight="0.36653388" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13488701" sideWeight="0.62815404" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13488701" sideWeight="0.3625498" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -265,7 +286,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -336,65 +356,57 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RFGridContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="41" selection-start="1267" selection-end="1278" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CursorCell.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/S.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="15" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RFUIBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="5" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main3_mine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RFUIBlock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="5" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/S.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RFGridContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="41" selection-start="1267" selection-end="1278" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cell.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="27" selection-start="224" selection-end="232" vertical-scroll-proportion="-8.076923">
+        <state line="3" column="2" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VirusGameEngine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.33333334">
+        <state line="96" column="21" selection-start="2144" selection-end="2150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cell.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="4" selection-start="337" selection-end="337" vertical-scroll-proportion="0.47085202">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/elements/Enemy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.6706408">
+        <state line="77" column="0" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.48387095">
           <folding />
         </state>
       </provider>

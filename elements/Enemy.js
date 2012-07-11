@@ -52,7 +52,7 @@
 
         console.log("now",this.gridX,this.gridY);
 
-        var tCell = this.gridRef.getItemAtXY(this.gridX,this.gridY+1).infected;
+        var tCell = this.gridRef.getItemAtXY(this.gridX,this.gridY+1).free;
 
         if(tCell==true) console.log("there'sone");
 
@@ -70,23 +70,50 @@
     };
 
     Enemy.prototype.decideWhichWayGo  = function(dir) {
+
         var result = dir;
+        var rArr = this.checkFree();
 
-        //if going right
-        if(dir=="RIGHT") {
+        for (var i rArr) {
 
-
-            var cond1 = this.gridRef.getItemAtXY(this.gridX+1,this.gridY).infected;
-
-
-            var cond2 = this.gridRef.getItemAtXY(this.gridX+1,this.gridY).infected;
+                //if found, keep on going same way
+                if (result==rArr[i]) {
 
 
+                }
         }
 
 
         return result
     }
+
+    Enemy.prototype.checkFree =function () {
+
+            var result = [];
+            if (this.gridRef.getItemAtXY(this.gridX+1,this.gridY).free) result.push("RIGHT");
+            if (this.gridRef.getItemAtXY(this.gridX-1,this.gridY).free) result.push("LEFT");
+            if (this.gridRef.getItemAtXY(this.gridX,this.gridY-1).free) result.push("UP");
+            if (this.gridRef.getItemAtXY(this.gridX,this.gridY+1).free) result.push("DOWN");
+
+        return result;
+    }
+
+    Enemy.prototype.checkRight =function () {
+        return this.gridRef.getItemAtXY(this.gridX+1,this.gridY).free
+    };
+
+    Enemy.prototype.checkDown =function () {
+        return this.gridRef.getItemAtXY(this.gridX,this.gridY+1).free
+    };
+
+    Enemy.prototype.checkLeft =function () {
+        return this.gridRef.getItemAtXY(this.gridX-1,this.gridY).free
+    };
+
+    Enemy.prototype.checkUp =function () {
+        return this.gridRef.getItemAtXY(this.gridX,this.gridY-1).free
+    };
+
 
 
 

@@ -8,7 +8,7 @@
 	
 	Cell.prototype.infectiousDirections = [];
 
-	Cell.prototype.infected = false;
+	Cell.prototype.free = false;
 	
 	Cell.prototype.infect = function() {
 		//this.alpha=0;

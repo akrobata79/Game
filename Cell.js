@@ -12,7 +12,7 @@
 	
 	Cell.prototype.infectiousDirections = ["UP","DOWN","RIGHT","LEFT"];
 	
-	Cell.prototype.infected = false;
+	Cell.prototype.free = true;
 
 	Cell.prototype.engine;
 
@@ -23,7 +23,7 @@
 	
 	Cell.prototype.infect = function(byuser) {
 		
-		this.infected=true;
+		this.free=false;
 		this.setVisualState("stateOver");
 		
 	};
