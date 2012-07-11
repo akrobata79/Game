@@ -1,3 +1,5 @@
+//http://james.padolsey.com/javascript/closures-in-javascript/
+
 //http://jsfiddle.net/
 //http://www.shinydemos.com/
 //http://www.alexisriols.fr/

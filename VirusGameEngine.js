@@ -45,8 +45,9 @@ VirusGameEngine.prototype = {
                 this.infectCell(i,5);
             };
 
-            //this.infectCell(
-
+            this.infectCell(8,4);
+            this.infectCell(8,3);
+          //  this.infectCell(7,2);
             enemy.go("RIGHT");
 
 

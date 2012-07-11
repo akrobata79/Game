@@ -9,6 +9,8 @@
 
 (function(window) {
 
+    var p = Enemy.prototype;
+
     function Enemy() {
         this.initialize();
     };
@@ -25,6 +27,9 @@
     Enemy.prototype.gridRef=null;
 
     Enemy.prototype.initGridPos=new Point(0,0);
+
+    Enemy.prototype.currDir="RIGHT";
+    Enemy.prototype.prevDir;
 
     Enemy.prototype.initialize = function() {
         this.allowAnimation=true;
@@ -50,13 +55,9 @@
 
     Enemy.prototype.go = function(dir) {
 
-        console.log("now",this.gridX,this.gridY);
-
         var tCell = this.gridRef.getItemAtXY(this.gridX,this.gridY+1).free;
 
-        if(tCell==true) console.log("there'sone");
-
-            var animParams = {onComplete:this.calculateNextMove};
+        var animParams = {onComplete:this.calculateNextMove};
 
             switch(this.decideWhichWayGo(dir)) {
 
@@ -67,21 +68,61 @@
             }
 
             TweenMax.to(this, S.ENEMY_SPEED,animParams);
+        console.log("step end *")
     };
+
+
+    function getHandler(n) {
+        return function() {
+            alert( 'You clicked on: ' + n );
+        };
+    }
+
+//    for (var i = 0; i < 100; ++i) {
+//        myElements[i].onclick = getHandler(i);
+//    }
 
     Enemy.prototype.decideWhichWayGo  = function(dir) {
 
+
+        //console.log("this.prevDir",this.prevDir);
+
         var result = dir;
+
         var rArr = this.checkFree();
 
-        for (var i rArr) {
+        console.log("attempting to go:",result, "but can go: ",rArr)
+
+
+
+        for (var i in rArr) {
 
                 //if found, keep on going same way
+
                 if (result==rArr[i]) {
 
+                    console.log("deciding to go:", result)
+
+                    break;
+
+                } else {
+
+                   var pickRandom=rArr[Rndm.integer(rArr.length)];
+
+                    result=pickRandom;
+                    console.log("deciding to go:", result)
+                    break;
 
                 }
+
+
         }
+
+        if(!this.prevDir) {this.prevDir=result} else {this.prevDir=this.currDir};
+        this.currDir=result;
+
+        console.log("step start ***********")
+        console.log("curr",this.currDir,"prev",this.prevDir)
 
 
         return result
@@ -116,7 +157,6 @@
 
 
 
-
     Enemy.prototype.animationOver = function() {
         this.calculateNextMove();
     };
@@ -124,7 +164,7 @@
     Enemy.prototype.calculateNextMove = function () {
 
         var ref = this.target;
-        ref.go("RIGHT");
+        ref.go(ref.currDir);
 
       //  console.log(ref.gridX,ref.gridY);
 
