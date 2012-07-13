@@ -18,7 +18,7 @@ function init() {
 	stage = new Stage(canvas);
 
     stage.addChild(gameContainer);
-    gameContainer.alpha=0.1;
+//    gameContainer.alpha=0.1;
 
 	start();
 }

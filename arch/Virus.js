@@ -10,7 +10,7 @@
 
 	Cell.prototype.free = false;
 	
-	Cell.prototype.infect = function() {
+	Cell.prototype.drawWall = function() {
 		//this.alpha=0;
 
         console.log("daamnnn")

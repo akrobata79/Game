@@ -41,9 +41,41 @@ VirusGameEngine.prototype = {
             // tests:
             enemy.placeHere(5,4);
 
-            for ( var i = 5; i < 10; i++) {
-                this.infectCell(i,5);
-            };
+
+            for ( var i = 0; i < 8; i++) {
+                var en = new Enemy();
+                en.gridRef=grid;
+
+                mainContainer.addChild(en);
+                en.placeHere(1,1+i);
+                en.go("RIGHT");
+
+            }
+
+            for ( var i = 0; i < 8; i++) {
+                var en = new Enemy();
+                en.gridRef=grid;
+
+                mainContainer.addChild(en);
+                en.placeHere(3,1+i);
+                en.go("RIGHT");
+
+            }
+
+            for ( var i = 0; i < 8; i++) {
+                var en = new Enemy();
+                en.gridRef=grid;
+
+                mainContainer.addChild(en);
+                en.placeHere(6,1+i);
+                en.go("RIGHT");
+
+            }
+
+
+//            for ( var i = 5; i < 10; i++) {
+//                this.infectCell(i,5);
+//            };
 
             //frames
             for ( var i = 0; i < S.G_WIDTH; i++) {
@@ -94,7 +126,7 @@ VirusGameEngine.prototype = {
 
 		mainContainerClicked: function(ev){
 			var r = checkIfOverArray(ev,this.gridRef.items);
-			if(r>-1) this.gridRef.items[r].infect(true);
+			if(r>-1) this.gridRef.items[r].drawWall(true);
 		},
 
 		findNeighboors: function() {
@@ -107,7 +139,7 @@ VirusGameEngine.prototype = {
 
 		infectCell: function(x,y) {
             var yo = grid.getItemAtXY(x,y);
-            yo.infect(false);
+            yo.drawWall(false);
 
 		},
 
